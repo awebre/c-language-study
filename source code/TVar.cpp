@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-using namespace std;
+using namespace std; //using std allows us to automatically declare using std scope
 
 int main()
 {
@@ -11,6 +11,9 @@ int main()
    char myString1[] = "c++";
    string myString2 = "C Plus Plus";
    string* myStringPointer = &myString2;
+
+   num2 = floatingAlong; //similar to c there is no type checking
+   floatingAlong = num1; //implicit casting similar to c
 
    cout << "Integers: " << endl;
    cout << "num1 = " << num1 << endl;
