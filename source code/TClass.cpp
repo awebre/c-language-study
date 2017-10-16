@@ -15,10 +15,10 @@ using namespace std;
 
 int main()
 {
-   Person people[2];
-   Person* personPointer = people;
+   Person people[2]; //create person array
+   Person* personPointer = people; //assign pointer to person array
 
-   personPointer -> setName("Austin");
+   personPointer -> setName("Austin"); //use mutator from pointer
    personPointer -> setAge(21);
    cout << "personPointer -> print():" << endl;
    personPointer -> print();
