@@ -9,11 +9,12 @@ int main()
    float floatingAlong = 2.2345432;
    char character = 'c';
    char myString1[] = "c++";
-   string myString2 = "C Plus Plus";
-   string* myStringPointer = &myString2;
+   string myString2 = "C Plus Plus"; //the string class from std library is essential a character array
+   string* myStringPointer = &myString2; //this is a pointer to myString2 
+   myString2 = myString2 + "!";
 
-   num2 = floatingAlong; //similar to c there is no type checking
-   floatingAlong = num1; //implicit casting similar to c
+   num2 = floatingAlong; //as in C there is no type checking
+   floatingAlong = num1; //as in C there is implicit casting
 
    cout << "Integers: " << endl;
    cout << "num1 = " << num1 << endl;

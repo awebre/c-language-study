@@ -28,6 +28,7 @@ int main()
       }
    }
 
+   //simple switch statement
    switch (num3)
    {
       case 1:
