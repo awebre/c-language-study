@@ -39,6 +39,18 @@ int main()
       pointer++;
    }
 
+   /*
+      range based for loops iterate based on the length of a collection
+   */
+   cout << "Range based for loop (1D array):" << endl;
+   for (int i : aArray) cout << "aArray contains " << i << endl;
+
+   cout << "Nested range based for loop (2D array):" << endl;
+   for (auto &a : bArray)
+   {//nested range based for loops
+      for(int &i : a) cout << "bArray contains " << i << endl;
+   }
+
    cout << "Nested for loop (2D array):" << endl;
    pointer = &bArray[0][0];
    for(int i = 0; i < 3; i++)
@@ -55,7 +67,7 @@ int main()
       iterate over collections without knowing the particulars of the
       collection type.
    */
-   
+
    cout << "for_each in myVec: " << endl;
    for_each(myVec.begin(), myVec.end(), vectorPrint());
 }

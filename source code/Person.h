@@ -1,5 +1,5 @@
-#ifndef PERSON_H_INCLUDED//include guard
-#define PERSON_H_INCLUDED//used to prevent multiple inclusions
+#ifndef PERSON_H_INCLUDED//include guards use preprocessor
+#define PERSON_H_INCLUDED//definitions to prevent multiple inclusions
 
 #include <string>
 #include <iostream>
