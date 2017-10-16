@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <cstdio>
 /*
 *Author: Nathan Murphy
 *Class: CMPS 401
